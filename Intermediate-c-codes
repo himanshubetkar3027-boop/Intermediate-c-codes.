@@ -1,0 +1,67 @@
+//name with department
+#include <stdio.h>
+
+void main()
+{
+    char name[70];
+    // clrscr();
+
+    printf("Enter your name:");
+    scanf("%s", name);
+
+    printf("Hello! %s", name);
+    printf("\nWelcome to Robotics Automation %s", name);
+
+    // getch();
+}
+
+//Sensor Threshold Logic using If-else
+#include <stdio.h>
+
+void main()
+{
+    float temperature;
+    int threshold = 80;
+    int critical = 100;
+
+    // clrscr();
+
+    printf("Enter your temperature: ");
+    scanf("%f", &temperature);
+
+    if (temperature <= threshold)
+    {
+        printf("Patient Status: Normal");
+    }
+    else if (temperature <= critical)
+    {
+        printf("Patient Status: Warning");
+    }
+    else
+    {
+        printf("Patient Status: Critical");
+    }
+
+    // getch();
+}
+
+
+//Sensor value addition
+#include <stdio.h>
+
+void main()
+{
+    int sensor1, sensor2, sum;
+
+    printf("Enter Sensor 1 Value:");
+    scanf("%d", &sensor1);
+
+    printf("Enter Sensor 2 Value:");
+    scanf("%d", &sensor2);
+
+    sum = sensor1 + sensor2;
+
+    printf("Sum of Sensor Values:%d", sum);
+
+    // getch();
+}
